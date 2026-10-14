@@ -13,7 +13,7 @@ body.picnic-open .group-call-tool{display:grid}
 .p9-title{text-align:center;font-size:20px;margin:0 0 20px;font-weight:400}
 .p9-pictures{display:flex;align-items:center;justify-content:center;gap:30px;padding:30px 0}
 #picnic .p9-picture-button{padding:0;border:3px solid #111;width:min(38%,310px)}
-.p9-art{width:100%;aspect-ratio:4/3;background-image:url('assets/tile9-picnic.png');background-size:200% 400%;background-repeat:no-repeat;background-color:#fff}
+.p9-art{width:100%;aspect-ratio:4/3;background-image:url('assets/tile9-picnic.webp');background-size:200% 400%;background-repeat:no-repeat;background-color:#fff}
 .p9-feature{width:min(360px,80%);margin:0 auto 22px;border:2px solid #111}
 .p9-cues,.p9-pile,.p9-answer{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:10px;min-height:65px}
 .p9-cues{margin:12px 0}
