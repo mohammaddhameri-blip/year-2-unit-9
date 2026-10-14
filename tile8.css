@@ -1,0 +1,44 @@
+/* Tile 8: deliberately restrained, matching the lesson sketch. */
+body.punctuation-open .group-call-tool{display:grid}
+#punctuation{color:#151515}
+#punctuation .p8-shell{max-width:1400px;margin:auto}
+#punctuation h2{font-size:clamp(22px,2.5vw,34px);color:#111;margin:0 0 14px}
+#punctuation button{border:2px solid #111;border-radius:3px;background:#fff;color:#111;box-shadow:none;transform:none;touch-action:manipulation}
+#punctuation button:focus-visible{outline:3px solid #0077bb;outline-offset:3px}
+#punctuation button:disabled{opacity:.3;cursor:default}
+.p8-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:18px}
+#punctuation .p8-tabs button{font-size:16px;padding:9px 18px}
+#punctuation .p8-tabs button[aria-pressed=true]{background:#111;color:#fff}
+.p8-board{border:3px solid #111;background:#fff;padding:24px;min-height:440px;position:relative}
+.p8-title{text-align:center;font-size:20px;margin:0 0 20px;font-weight:400}
+.p8-pictures{display:flex;align-items:center;justify-content:center;gap:30px;padding:30px 0}
+#punctuation .p8-picture-button{padding:0;border:3px solid #111;width:min(38%,310px)}
+.p8-art{width:100%;aspect-ratio:4/3;background-image:url('assets/tile8-zoo.png');background-size:200% 400%;background-repeat:no-repeat;background-color:#fff}
+.p8-feature{width:min(360px,80%);margin:0 auto 22px;border:2px solid #111}
+.p8-cues,.p8-pile,.p8-answer{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:10px;min-height:65px}
+.p8-cues{margin:12px 0}
+#punctuation .p8-word,.p8-cue{font-size:clamp(19px,2vw,30px);font-weight:500;padding:10px 15px;border:3px solid #00a7df;border-radius:0;background:white;color:#111;line-height:1.25}
+#punctuation .p8-word.cue,.p8-cue.cue{border-color:#ed2438}
+.p8-answer{border:2px solid #111;min-height:142px;padding:18px 12px;margin:20px 0 16px}
+.p8-pile{min-height:120px;margin:12px 0}
+.p8-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.p8-group{border:3px solid #111;padding:20px;background:#fff;display:flex;flex-direction:column;min-height:480px;min-width:0}
+.p8-group-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;font-size:18px;font-weight:700}
+.p8-group-head small{font-size:15px;font-weight:400;white-space:nowrap}
+.p8-members{font-size:14px;margin-bottom:14px}
+.p8-members summary{cursor:pointer;font-weight:600;padding:5px 0}
+.p8-members-list{max-height:145px;overflow-y:auto;padding:8px 0;line-height:1.5;font-size:12px}
+.p8-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:auto;padding-top:16px}
+#punctuation .p8-controls button{height:60px;font-size:clamp(19px,2vw,27px);padding:0 5px}
+.p8-feedback{font-size:18px;min-height:28px;text-align:center;margin:4px 0;color:#b42030}
+.p8-feedback.good{color:#08783d}
+.p8-edit{display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:8px 14px;min-height:210px;padding:15px 2px}
+.p8-edit-word{display:inline-flex;white-space:nowrap;align-items:baseline}
+#punctuation .p8-letter{font:inherit;font-size:clamp(25px,2.6vw,39px);font-weight:500;border:0;border-bottom:3px solid transparent;padding:5px 2px;min-width:17px;border-radius:0}
+#punctuation .p8-letter.selected{background:#e0f5ff;border-bottom-color:#0079ae}
+.p8-dot{font-size:36px}
+.p8-teach-footer{display:flex;justify-content:space-between;margin-top:18px}
+#punctuation .p8-teach-footer button{width:54px;height:46px;padding:0;font-size:26px}
+.p8-done{font-size:42px;text-align:center;margin:auto;padding:50px 0}
+@media(max-width:850px){.p8-group{padding:12px}.p8-duo{gap:10px}#punctuation .p8-word{padding:9px 10px;font-size:21px}.p8-board{padding:16px}.p8-group-head{font-size:15px}.p8-controls{gap:5px}}
+@media(max-width:550px){#punctuation{padding:15px 56px}.p8-duo{overflow-x:auto;grid-template-columns:repeat(2,minmax(250px,1fr));padding-bottom:12px}.p8-pictures{gap:12px}.p8-board{padding:10px}.p8-title{font-size:18px}.p8-feature{width:95%}}
