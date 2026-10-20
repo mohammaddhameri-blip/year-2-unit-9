@@ -74,3 +74,8 @@ body.punctuation-open{background:linear-gradient(135deg,#dff7ff 0%,#f1e9ff 55%,#
 .p8-controls{padding-top:8px}
 .p8-done{color:var(--group)}
 @media(max-width:850px){.p8-group-head{font-size:17px}.p8-group-head small{font-size:13px;padding:4px 6px}.p8-member-select{font-size:13px}.p8-feedback{font-size:21px}.p8-feedback-icon{font-size:52px}}
+
+.p8-score-value{font-size:clamp(42px,6vw,76px);font-weight:900}
+.p8-score-label{font-size:20px;margin-top:8px}
+.p8-complete{margin:auto;text-align:center;color:#11834d;font-size:32px;font-weight:800;padding:60px 0}
+.p8-complete span{display:block;font-size:60px}

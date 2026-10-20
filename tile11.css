@@ -1,0 +1,99 @@
+/* Tile 11 follows the established lesson layout. */
+body.combined-open .group-call-tool{display:grid}
+#combined{color:#151515}
+#combined .p11-shell{max-width:1400px;margin:auto}
+#combined h2{font-size:clamp(22px,2.5vw,34px);color:#111;margin:0 0 14px}
+#combined button{border:2px solid #111;border-radius:3px;background:#fff;color:#111;box-shadow:none;transform:none;touch-action:manipulation}
+#combined button:focus-visible{outline:3px solid #0077bb;outline-offset:3px}
+#combined button:disabled{opacity:.3;cursor:default}
+.p11-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:18px}
+#combined .p11-tabs button{font-size:16px;padding:9px 18px}
+#combined .p11-tabs button[aria-pressed=true]{background:#111;color:#fff}
+.p11-board{border:3px solid #111;background:#fff;padding:24px;min-height:440px;position:relative}
+.p11-title{text-align:center;font-size:20px;margin:0 0 20px;font-weight:400}
+.p11-pictures{display:flex;align-items:center;justify-content:center;gap:30px;padding:30px 0}
+#combined .p11-picture-button{padding:0;border:3px solid #111;width:min(38%,310px)}
+.p11-art{width:100%;aspect-ratio:4/3;background-image:url('assets/tile10-photos.webp');background-size:200% 400%;background-repeat:no-repeat;background-color:#fff}
+.p11-feature{width:min(360px,80%);margin:0 auto 22px;border:2px solid #111}
+.p11-cues,.p11-pile,.p11-answer{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:10px;min-height:65px}
+.p11-cues{margin:12px 0}
+#combined .p11-word,.p11-cue{font-size:clamp(19px,2vw,30px);font-weight:500;padding:10px 15px;border:3px solid #00a7df;border-radius:0;background:white;color:#111;line-height:1.25}
+#combined .p11-word.cue,.p11-cue.cue{border-color:#ed2438}
+.p11-answer{border:2px solid #111;min-height:142px;padding:18px 12px;margin:20px 0 16px}
+.p11-pile{min-height:120px;margin:12px 0}
+.p11-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.p11-group{border:3px solid #111;padding:20px;background:#fff;display:flex;flex-direction:column;min-height:480px;min-width:0}
+.p11-group-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;font-size:18px;font-weight:700}
+.p11-group-head small{font-size:15px;font-weight:400;white-space:nowrap}
+.p11-members{font-size:14px;margin-bottom:14px}
+.p11-members summary{cursor:pointer;font-weight:600;padding:5px 0}
+.p11-members-list{max-height:145px;overflow-y:auto;padding:8px 0;line-height:1.5;font-size:12px}
+.p11-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:auto;padding-top:16px}
+#combined .p11-controls button{height:60px;font-size:clamp(19px,2vw,27px);padding:0 5px}
+.p11-feedback{font-size:18px;min-height:28px;text-align:center;margin:4px 0;color:#b42030}
+.p11-feedback.good{color:#08783d}
+.p11-edit{display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:8px 14px;min-height:210px;padding:15px 2px}
+.p11-edit-word{display:inline-flex;white-space:nowrap;align-items:baseline}
+#combined .p11-letter{font:inherit;font-size:clamp(25px,2.6vw,39px);font-weight:500;border:0;border-bottom:3px solid transparent;padding:5px 2px;min-width:17px;border-radius:0}
+#combined .p11-letter.selected{background:#e0f5ff;border-bottom-color:#0079ae}
+.p11-dot{font-size:36px}
+.p11-teach-footer{display:flex;justify-content:space-between;margin-top:18px}
+#combined .p11-teach-footer button{width:54px;height:46px;padding:0;font-size:26px}
+.p11-done{font-size:42px;text-align:center;margin:auto;padding:50px 0}
+@media(max-width:850px){.p11-group{padding:12px}.p11-duo{gap:10px}#combined .p11-word{padding:9px 10px;font-size:21px}.p11-board{padding:16px}.p11-group-head{font-size:15px}.p11-controls{gap:5px}}
+@media(max-width:550px){#combined{padding:15px 56px}.p11-duo{overflow-x:auto;grid-template-columns:repeat(2,minmax(250px,1fr));padding-bottom:12px}.p11-pictures{gap:12px}.p11-board{padding:10px}.p11-title{font-size:18px}.p11-feature{width:95%}}
+
+/* Colour refresh, compact pupil dropdowns and classroom-sized feedback. */
+body.combined-open{background:linear-gradient(135deg,#dff7ff 0%,#f1e9ff 55%,#fff2d9 100%);background-attachment:fixed}
+#combined h2{color:#393271}
+#combined button{border-color:#a79bc9;border-radius:12px;color:#393271}
+#combined .p11-tabs button{border-color:#bcafd9;background:#ffffffc9}
+#combined .p11-tabs button[aria-pressed=true]{background:#7252b7;border-color:#7252b7;color:#fff;box-shadow:0 4px 12px #7252b72b}
+.p11-board{border:3px solid #b5a5d5;border-radius:22px;background:linear-gradient(180deg,#fffef8,#edf9ff);box-shadow:0 8px 24px #60508014}
+.p11-title{color:#4c4273;font-weight:700}
+#combined .p11-picture-button,.p11-feature{border:3px solid #aa95cc;border-radius:16px;overflow:hidden;box-shadow:0 6px 16px #6951891c}
+.p11-group{--group:#247fac;--group-light:#e8f7ff;border-color:#82c5e3;background:linear-gradient(180deg,#e8f7ff 0%,#fff 42%);border-radius:20px;box-shadow:0 7px 20px #405d8812}
+.p11-group:nth-child(2){--group:#a96318;--group-light:#fff0d9;border-color:#e9ba7b;background:linear-gradient(180deg,#fff0d9 0%,#fff 42%)}
+.p11-group-head{color:var(--group);font-size:20px}
+.p11-group-head small{background:#fff9;border-radius:12px;padding:5px 9px;color:#56526c}
+.p11-member-select{width:100%;min-width:0;height:42px;padding:0 12px;border:1px solid #b6c7d6;background:#ffffffd9;border-radius:10px;color:#43546a;font:600 15px Arial,Helvetica,sans-serif;margin:0 0 12px;cursor:pointer;text-overflow:ellipsis}
+.p11-member-select:focus-visible{outline:3px solid #0077bb;outline-offset:2px}
+.p11-answer{border:2px dashed #a4bfd3;border-radius:15px;background:#f4faff;min-height:125px}
+.p11-group:nth-child(2) .p11-answer{border-color:#d8b17b;background:#fffaf1}
+#combined .p11-word,.p11-cue{border-color:#5daed4;background:#e4f6ff;color:#195a79;border-radius:10px}
+#combined .p11-word.cue,.p11-cue.cue{border-color:#df7c92;background:#fff0f4;color:#8b334b}
+#combined .p11-word:hover{filter:brightness(.97);box-shadow:0 3px 7px #43546a15}
+#combined .p11-controls button{background:#f1ebff;border-color:#b2a0d6;color:#523780;font-weight:800}
+#combined .p11-controls button:last-child{background:#7252b7;border-color:#7252b7;color:#fff}
+#combined .p11-letter{border-radius:5px;border:0;border-bottom:3px solid transparent;background:transparent;color:#23364b}
+#combined .p11-letter.selected{background:#d2efff;border-bottom-color:#1588bd}
+#combined .p11-letter:disabled{opacity:1}
+.p11-feedback{min-height:92px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#c82e48;font-size:clamp(20px,2vw,27px);font-weight:800;line-height:1.2;margin:8px 0}
+.p11-feedback.good{color:#11834d}
+.p11-feedback-icon{display:block;font-size:58px;line-height:1;font-weight:900}
+.p11-controls{padding-top:8px}
+.p11-done{color:var(--group)}
+@media(max-width:850px){.p11-group-head{font-size:17px}.p11-group-head small{font-size:13px;padding:4px 6px}.p11-member-select{font-size:13px}.p11-feedback{font-size:21px}.p11-feedback-icon{font-size:52px}}
+
+.p11-art{aspect-ratio:2/1;background-size:100% 300%}
+#combined .p11-picture-button{width:31%;max-width:390px}
+.p11-pictures{gap:18px}
+.p11-feature{width:min(600px,90%)}
+#combined .p11-word.green,.p11-cue.green{background:#e3f8e9;border-color:#64b886;color:#226943}
+#combined .p11-word.red,.p11-cue.red{background:#fff0f4;border-color:#df7c92;color:#8b334b}
+.p11-score-value{font-size:clamp(42px,6vw,76px);font-weight:900}
+.p11-score-label{font-size:20px;margin-top:8px}
+.p11-complete{margin:auto;text-align:center;color:#11834d;font-size:32px;font-weight:800;padding:60px 0}
+.p11-complete span{display:block;font-size:60px}
+.p11-edit{min-height:175px}
+#combined .p11-letter{min-width:12px;padding:5px 1px}
+@media(max-width:700px){.p11-pictures{flex-wrap:wrap;padding:12px 0}#combined .p11-picture-button{width:100%;max-width:440px}.p11-feature{width:100%}}
+
+.p11-question-tabs{display:flex;gap:8px;margin:8px 0}
+#combined .p11-question-tabs button{flex:1;padding:10px}
+#combined .p11-question-tabs button[aria-pressed=true]{background:#7252b7;color:#fff;border-color:#7252b7}
+.p11-round-progress{text-align:center;color:#56526c;font-size:15px;margin:6px 0}
+#combined .p11-next-question{margin-top:12px;background:#e3f8e9;border-color:#64b886}
+
+.p11-controls{grid-template-columns:repeat(3,minmax(0,1fr))}
+#combined .p11-controls button:last-child{grid-column:1/-1;height:48px}
